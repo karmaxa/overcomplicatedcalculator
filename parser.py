@@ -65,7 +65,7 @@ class Operator(Token):
 class Parser:
     raw_query: str
     list_query: list[Token]
-    rpn_list: list[Token]
+    rpn_query: list[Token]
     output: float | int
 
     def __init__(self, raw_query: str | None = None):
@@ -172,11 +172,11 @@ class Parser:
                     rpn_list.append(op_stack.pop())
                 else:
                     break
-        self.rpn_list = rpn_list
+        self.rpn_query = rpn_list
 
     def evaluate(self):
         stack: list = []
-        for token in self.rpn_list:
+        for token in self.rpn_query:
             if token.is_operand:
                 stack.append(token)
                 continue
