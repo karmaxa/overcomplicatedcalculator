@@ -84,7 +84,9 @@ class Parser:
                     value = float(current)
                     self.list_query.append(Operand(value))
                 except ValueError:
-                    print(f"Unsupported operand or operator: |{current}|")
+                    raise ValueError(
+                        f"Unsupported operand or operator: |{current}|"
+                    )
 
     def parse_to_in(self):
         current: str = ""
