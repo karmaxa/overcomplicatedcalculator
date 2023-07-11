@@ -5,7 +5,7 @@ It's just me trying to entertain myself decided to code a class-based calculator
 You can use it by simply launching main.py.
 Input your string with math expression and calculator will calculate it.
 
-###Possible operators:
+### Possible operators:
 
 ```
 - (
@@ -27,7 +27,8 @@ Input your string with math expression and calculator will calculate it.
 
 
 Also parser.Parser can be used for parsing algebraic expression into inline notation (parser.Parser.parse_to_in()) or into polish notation (parser.Parser.parse_to_rpn()).
-###Usage of the parser:
+
+### Usage of the parser:
 
 ```
 - initiate your query string
