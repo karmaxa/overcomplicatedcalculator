@@ -5,8 +5,9 @@ It's just me trying to entertain myself decided to code a class-based calculator
 You can use it by simply launching main.py.
 Input your string with math expression and calculator will calculate it.
 
-Possible operators:
-'''
+###Possible operators:
+
+```
 - (
 - )
 - - | regular subtraction
@@ -22,12 +23,13 @@ Possible operators:
   + arcsin, arccos, arctan, arcctg
 - log | logarithm. usage: log2(8) will give you log of 8 by base 2 (e.g. 3)
 - ln | natural logarithm. usage: ln(10)
-'''
+```
 
 
 Also parser.Parser can be used for parsing algebraic expression into inline notation (parser.Parser.parse_to_in()) or into polish notation (parser.Parser.parse_to_rpn()).
-Usage of the parser:
-'''
+###Usage of the parser:
+
+```
 - initiate your query string
   > query = "2+2*2"
 - create a new Parser object and provide a string to it
@@ -46,6 +48,6 @@ Usage of the parser:
   > parser.evaluate()
   > parser.output
   < 6.0
-'''
+```
 
 Note that none of Parser methods return anything. Parser saves every stage in itself and values at every stage are available at any time after they are generated.
